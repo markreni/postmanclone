@@ -16,7 +16,7 @@ class NavigationPanel extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               color: Colors.blue.shade400,
               onPressed: () {},
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("New Tab"),
@@ -28,7 +28,7 @@ class NavigationPanel extends StatelessWidget {
               child: ListView.builder(
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    return const NavigationCard();
+                    return NavigationCard();
                   }),
             ),
           ],

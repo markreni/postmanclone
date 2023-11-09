@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:postmanclone/src/views/request/Widgets/parameters.dart';
+import 'package:postmanclone/src/views/request/Widgets/response.dart';
 
 class RequestView extends StatefulWidget {
   const RequestView({super.key});
@@ -11,7 +13,7 @@ class _RequestViewState extends State<RequestView> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             TextFormField(
@@ -65,6 +67,16 @@ class _RequestViewState extends State<RequestView> {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(height: 20.0),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(child: ParametersView()),
+                  SizedBox(width: 20.0),
+                  Expanded(child: ResponseView()),
+                ],
+              ),
             )
           ],
         ));

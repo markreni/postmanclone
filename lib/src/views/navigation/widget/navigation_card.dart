@@ -13,13 +13,13 @@ class NavigationCard extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               "Request Name",
-              style: const TextStyle(fontSize: 14),
+              style: TextStyle(fontSize: 14),
             ),
-            Text(
+            const Text(
               "GET",
-              style: const TextStyle(fontSize: 12),
+              style: TextStyle(fontSize: 12),
             ),
             InkWell(
               onTap: () {
